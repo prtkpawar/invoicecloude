@@ -58,7 +58,7 @@ fun KitSelectorRow(
                     Text(text = kit.iconEmoji, style = MaterialTheme.typography.titleMedium)
                     Text(text = kit.name, style = MaterialTheme.typography.titleMedium)
                     Text(text = kit.description, style = MaterialTheme.typography.bodySmall)
-                    Text(text = "Rate: ${kit.defaultRate}", style = MaterialTheme.typography.labelSmall)
+                    Text(text = "Rate: ${kit.defaultRatePerUnit}", style = MaterialTheme.typography.labelSmall)
                 }
             }
         }

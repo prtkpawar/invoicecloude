@@ -535,7 +535,7 @@ fun DocFormScreen(
                             color = Ink900
                         )
                         Text(
-                            text = "${currentFirm?.brandName ?: "Active Firm"}${if (!isSolarModeActive) " • Step ${currentStep + 1} of 3" else ""}",
+                            text = "${currentFirm?.brandName ?: "Active Firm"} • Step ${currentStep + 1} of 3",
                             fontSize = 11.5.sp,
                             color = Ink600
                         )
@@ -626,40 +626,22 @@ fun DocFormScreen(
                 }
             }
 
-            if (isSolarModeActive) {
-                Surface(
-                    color = Color.White,
-                    shadowElevation = 8.dp,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Button(
-                        onClick = onSaveAction,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(16.dp)
-                            .height(56.dp)
-                    ) {
-                        Text("Save Estimate", fontWeight = FontWeight.Bold, fontSize = 16.sp)
+            WizardBottomBar(
+                currentStep = currentStep,
+                totalSteps = 3,
+                onBack = { if (currentStep > 0) currentStep-- else if (isDirty) showDiscardDialog = true else onNavigateBack() },
+                onNext = {
+                    if (currentStep == 0 && selectedCustomer == null) {
+                        Toast.makeText(context, "Please select or add a ${terminology.partyLabel.lowercase()}", Toast.LENGTH_SHORT).show()
+                    } else if (currentStep == 1 && totals.total <= 0.0) {
+                        Toast.makeText(context, if (isSolarModeActive) "Please enter valid kW capacity and rate" else "Please add items to calculate amount", Toast.LENGTH_SHORT).show()
+                    } else {
+                        currentStep++
                     }
-                }
-            } else {
-                WizardBottomBar(
-                    currentStep = currentStep,
-                    totalSteps = 3,
-                    onBack = { if (currentStep > 0) currentStep-- else if (isDirty) showDiscardDialog = true else onNavigateBack() },
-                    onNext = {
-                        if (currentStep == 0 && selectedCustomer == null) {
-                            Toast.makeText(context, "Please select or add a ${terminology.partyLabel.lowercase()}", Toast.LENGTH_SHORT).show()
-                        } else if (currentStep == 1 && totals.total <= 0.0) {
-                            Toast.makeText(context, if (isSolarModeActive) "Please enter valid kW capacity and rate" else "Please add items to calculate amount", Toast.LENGTH_SHORT).show()
-                        } else {
-                            currentStep++
-                        }
-                    },
-                    onSave = onSaveAction,
-                    nextLabel = if (currentStep == 0) "Next: Items (${itemsList.size}) →" else "Next: Review Summary →"
-                )
-            }
+                },
+                onSave = onSaveAction,
+                nextLabel = if (currentStep == 0) "Next: Items (${if (isSolarModeActive) "Capacity" else itemsList.size.toString()}) →" else "Next: Review Summary →"
+            )
         },
         containerColor = Canvas
     ) { paddingValues ->
@@ -1808,16 +1790,16 @@ fun DocFormScreen(
                         itemsList.add(
                             DocItem(
                                 label = "${itemsList.size + 1}",
-                                description = catalogItem.name,
+                                description = catalogItem.label,
                                 hsn = "",
                                 qty = 1.0,
-                                unit = catalogItem.defaultUnit,
+                                unit = catalogItem.unit,
                                 rate = catalogItem.defaultRate,
                                 amount = catalogItem.defaultRate,
                                 sortOrder = itemsList.size
                             )
                         )
-                        Toast.makeText(context, "Added '${catalogItem.name.take(20)}...'", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Added '${catalogItem.label.take(20)}...'", Toast.LENGTH_SHORT).show()
                     }
                 )
             }

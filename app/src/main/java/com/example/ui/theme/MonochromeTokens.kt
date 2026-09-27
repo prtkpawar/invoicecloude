@@ -17,7 +17,6 @@ private val M900 = Color(0xFFE4E4E7)   // Dark-mode primary text (16.5:1 on M0 �
 private val W100 = Color(0xFFF4F4F5)   // Light input fill
 private val W600 = Color(0xFF3F3F46)   // Light placeholder on W100 = 8.4:1 ✓ AAA
 private val W900 = Color(0xFF18181B)   // Light primary text on white (17.9:1 ✓ AAA)
-private val White = Color(0xFFFFFFFF)
 
 /**
  * Light monochrome ColorScheme verified against WCAG AAA contrast standards.

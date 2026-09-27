@@ -213,6 +213,13 @@ class BillingViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
+    private val _estimatedCost = MutableStateFlow(0.0)
+    val estimatedCost: StateFlow<Double> = _estimatedCost.asStateFlow()
+
+    fun calculateAndStoreSolarEstimate(rate: Double, kw: Double) {
+        _estimatedCost.value = rate * kw
+    }
+
     private val _selectedDocId = MutableStateFlow<Int?>(null)
     val selectedDocId: StateFlow<Int?> = _selectedDocId.asStateFlow()
 

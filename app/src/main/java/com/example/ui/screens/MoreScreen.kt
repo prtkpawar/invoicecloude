@@ -53,7 +53,6 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -77,6 +76,8 @@ import coil.compose.AsyncImage
 import com.example.ui.components.PremiumAppLogo
 import com.example.ui.theme.Ink950
 import com.example.ui.theme.SwamiGreen
+import com.example.ui.theme.SwamiNavy
+import com.example.ui.theme.SwamiNavyLight
 import com.example.ui.theme.pro.Ink400
 import com.example.ui.theme.pro.Ink600
 import com.example.ui.theme.pro.Ink900
@@ -89,9 +90,6 @@ import com.example.utils.GoogleDriveSyncHelper
 import com.example.utils.SUPPORTED_LANGUAGES
 import com.example.utils.appString
 import kotlinx.coroutines.launch
-
-private val SwamiNavy = MaterialTheme.colorScheme.primary
-private val SwamiNavyLight = MaterialTheme.colorScheme.primaryContainer
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -185,7 +183,7 @@ fun MoreScreen(
         item {
             Card(
                 shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.cardColors(containercolor = MaterialTheme.colorScheme.onPrimary),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary),
                 border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
                 elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
                 modifier = Modifier.fillMaxWidth()
@@ -280,7 +278,7 @@ fun MoreScreen(
         item {
             Card(
                 shape = RoundedCornerShape(14.dp),
-                colors = CardDefaults.cardColors(containercolor = MaterialTheme.colorScheme.onPrimary),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary),
                 border = BorderStroke(1.dp, if (accountInfo != null) MaterialTheme.colorScheme.surface else MaterialTheme.colorScheme.outlineVariant),
                 modifier = Modifier.fillMaxWidth()
             ) {
@@ -554,7 +552,7 @@ fun MoreScreen(
 
             Card(
                 shape = RoundedCornerShape(16.dp),
-                colors = CardDefaults.cardColors(containercolor = MaterialTheme.colorScheme.onPrimary),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary),
                 border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
                 elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
                 modifier = Modifier.fillMaxWidth()
@@ -1025,7 +1023,7 @@ private fun ExecutiveToolTile(
 ) {
     Card(
         shape = RoundedCornerShape(14.dp),
-        colors = CardDefaults.cardColors(containercolor = MaterialTheme.colorScheme.onPrimary),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.onPrimary),
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
         elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
         modifier = modifier
