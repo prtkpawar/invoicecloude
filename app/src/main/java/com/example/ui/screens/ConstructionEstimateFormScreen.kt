@@ -82,65 +82,9 @@ data class ConstructionItemRow(
 /**
  * Standard Civil Item Definition for Quick Catalog
  */
-data class StandardCivilWork(
-    val category: String,
-    val title: String,
-    val description: String,
-    val defaultUnit: String,
-    val defaultRate: Double
-)
+// Removed StandardCivilWork
 
-val STANDARD_CIVIL_CATALOG = listOf(
-    // Foundation & Earthwork
-    StandardCivilWork("Earthwork", "Excavation in Earth / Soft Rock", "Excavation in earth, soft rock & murrum for foundation trench/pit including disposal & refilling.", "Cu.Ft", 18.0),
-    StandardCivilWork("Earthwork", "Murrum / Sand Filling in Plinth", "Filling in plinth with quarry murrum / sand in 15cm layers including watering, compaction & ramming.", "Brass", 3200.0),
-    StandardCivilWork("Earthwork", "Anti-Termite Treatment", "Chemical anti-termite treatment for soil, foundation trenches and plinth area as per IS standards.", "Sq.Ft", 14.0),
-
-    // Concrete & RCC
-    StandardCivilWork("Concrete & RCC", "PCC 1:4:8 Bedding", "Providing & laying Plain Cement Concrete (PCC) 1:4:8 in foundation and floor base with curing.", "Cu.Ft", 120.0),
-    StandardCivilWork("Concrete & RCC", "RCC Footings & Columns (M20/M25)", "Providing and casting RCC M20/M25 for foundation footings and columns including steel & formwork.", "Cu.Ft", 380.0),
-    StandardCivilWork("Concrete & RCC", "RCC Plinth & Tie Beams", "Providing and casting RCC Plinth beams with M20 concrete, centering, shuttering & reinforcement steel.", "Cu.Ft", 390.0),
-    StandardCivilWork("Concrete & RCC", "RCC Roof Slab & Beams Casting", "Providing & casting RCC M20/M25 roof slab and beams including centering, steel binding & curing complete.", "Cu.Ft", 410.0),
-    StandardCivilWork("Concrete & RCC", "RCC Staircase Waist Slab & Steps", "RCC Staircase with steps, waist slab, reinforcement binding and smooth finish.", "Cu.Ft", 420.0),
-
-    // Masonry & Brickwork
-    StandardCivilWork("Masonry", "6\" Red Clay / Fly Ash Brickwork", "Providing and constructing 6 inch thick brick masonry in cement mortar 1:6 with proper racking of joints.", "Sq.Ft", 95.0),
-    StandardCivilWork("Masonry", "9\" Main Load Bearing Brickwork", "Providing and constructing 9 inch thick brick masonry in cement mortar 1:6 with curing complete.", "Sq.Ft", 145.0),
-    StandardCivilWork("Masonry", "4\" Partition Brickwork", "Providing and constructing 4 inch thick partition brick wall with RCC patli & cement mortar 1:4.", "Sq.Ft", 65.0),
-    StandardCivilWork("Masonry", "AAC Lightweight Block Masonry", "AAC Lightweight Block masonry 6\" thick using thin-bed polymer adhesive jointing mortar.", "Sq.Ft", 88.0),
-
-    // Plaster & POP
-    StandardCivilWork("Plaster", "Internal Smooth Cement Plaster (12mm)", "Internal cement plaster 12mm thick in cement mortar 1:4 with smooth neeru / lime finish and 7 days curing.", "Sq.Ft", 42.0),
-    StandardCivilWork("Plaster", "External Sand-Faced Plaster (20mm)", "External double coat sand-faced cement plaster 20mm thick with waterproofing compound and scaffolding.", "Sq.Ft", 55.0),
-    StandardCivilWork("Plaster", "POP Punning / False Ceiling", "Gypsum / POP smooth punning on walls & designer false ceiling with perimeter channels.", "Sq.Ft", 75.0),
-
-    // Flooring & Tiles
-    StandardCivilWork("Flooring", "Vitrified Tiles Flooring 2x2 / 4x2", "Providing and laying premium 2x2 / 4x2 vitrified tiles on 1:4 cement bed with 4\" skirting & epoxy grouting.", "Sq.Ft", 85.0),
-    StandardCivilWork("Flooring", "Bathroom / Toilet Anti-Skid & Wall Tiles", "Anti-skid ceramic floor tiles and 7ft glazed wall tiles with waterproof spacer grouting.", "Sq.Ft", 78.0),
-    StandardCivilWork("Flooring", "Granite Kitchen Platform & Sink", "18mm black granite kitchen platform with stainless steel sink (SS 304), facia & granite support vertical brackets.", "Rft", 1100.0),
-    StandardCivilWork("Flooring", "Granite Staircase Treads & Risers", "Providing and fixing polished granite treads & risers with full moulding, chamfering and grooving.", "Sq.Ft", 165.0),
-
-    // Doors & Windows
-    StandardCivilWork("Doors & Windows", "Granite Door & Window Framing", "Granite door and window frame (Chowkat) 3-side / 4-side with polishing and silicone seal.", "Rft", 195.0),
-    StandardCivilWork("Doors & Windows", "Aluminium Sliding Windows (3-Track)", "Aluminium powder-coated 3-track sliding window with mosquito net & 5mm float glass.", "Sq.Ft", 225.0),
-    StandardCivilWork("Doors & Windows", "Flush Door with Laminate & SS Hardware", "32mm waterproof solid core flush door with 1mm mica laminate, SS hinges, mortise lock & handles.", "Nos", 5800.0),
-
-    // Plumbing & Electrical
-    StandardCivilWork("Plumbing & Electrical", "Concealed CPVC/UPVC Plumbing Complete", "Concealed CPVC/UPVC water supply & SWR drainage piping with Jaguar/equivalent brass fittings complete.", "L.S.", 65000.0),
-    StandardCivilWork("Plumbing & Electrical", "Concealed Electrical Wiring & DB", "Concealed PVC conduit wiring (Polycab/Finolex FR), modular switch plates, MCB Distribution Board & earthing.", "L.S.", 55000.0),
-    StandardCivilWork("Plumbing & Electrical", "Overhead / Underground Water Tank", "Underground RCC sumptank / 1000L Triple Layer Overhead Water Storage Tank with inlet-outlet fittings.", "L.S.", 35000.0),
-
-    // Painting & Waterproofing
-    StandardCivilWork("Finishing", "Wall Putty (2 Coats) + Primer", "Applying 2 coats of Birla / JK white cement wall putty with 1 coat interior primer and sanding smooth.", "Sq.Ft", 16.0),
-    StandardCivilWork("Finishing", "Interior Acrylic Emulsion / Royale Paint", "Applying 2 coats of Asian Paints Royale / Premium interior acrylic emulsion paint complete.", "Sq.Ft", 24.0),
-    StandardCivilWork("Finishing", "Exterior Weather-Proof Apex Paint", "Applying 2 coats of Asian Paints Apex weather-proof exterior acrylic emulsion over 1 coat exterior primer.", "Sq.Ft", 22.0),
-    StandardCivilWork("Finishing", "Terrace Waterproofing (Brickbat Coba)", "Terrace waterproofing with brickbat coba 115mm thick with chemical coating & pond testing.", "Sq.Ft", 75.0),
-
-    // Fabrication
-    StandardCivilWork("Fabrication", "MS Safety Window Grills", "Mild steel heavy decorative safety window box grills with red oxide primer and enamel paint.", "Sq.Ft", 160.0),
-    StandardCivilWork("Fabrication", "SS 304 Staircase / Balcony Railing", "Stainless Steel 304 grade mirror finish staircase and balcony railing with toughened glass brackets.", "Rft", 1250.0),
-    StandardCivilWork("Fabrication", "Main Designer Safety Gate", "Heavy duty MS designer main sliding/swing gate with sheet, hinges, lock & automotive PU paint.", "L.S.", 32000.0)
-)
+// Catalog is now handled via FirmFormConfigRegistry
 
 val COMMON_UNITS = listOf("Sq.Ft", "Cu.Ft", "Cu.M", "Brass", "Rft", "Nos", "Kg", "Bags", "L.S.", "Ton")
 
@@ -1407,132 +1351,59 @@ fun ConstructionEstimateFormScreen(
 
     // Quick Work Library Bottom Sheet / Dialog
     if (showQuickCatalogSheet) {
-        val categories = listOf("All") + STANDARD_CIVIL_CATALOG.map { it.category }.distinct()
-        val filteredCatalog = if (selectedCatalogCategory == "All") {
-            STANDARD_CIVIL_CATALOG
-        } else {
-            STANDARD_CIVIL_CATALOG.filter { it.category == selectedCatalogCategory }
-        }
-
-        AlertDialog(
-            onDismissRequest = { showQuickCatalogSheet = false },
-            title = {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.LibraryBooks, contentDescription = null, tint = SwamiNavy)
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text("Civil Work Library", fontWeight = FontWeight.Bold, fontSize = 17.sp)
-                }
-            },
-            text = {
-                Column(modifier = Modifier.fillMaxWidth().heightIn(max = 480.dp)) {
-                    Text(
-                        "Tap any standard civil specification to add it immediately:",
-                        fontSize = 12.sp,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    Spacer(modifier = Modifier.height(8.dp))
-
-                    LazyRow(
-                        horizontalArrangement = Arrangement.spacedBy(6.dp),
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        items(categories) { cat ->
-                            FilterChip(
-                                selected = selectedCatalogCategory == cat,
-                                onClick = { selectedCatalogCategory = cat },
-                                label = { Text(cat, fontSize = 11.sp) },
-                                colors = FilterChipDefaults.filterChipColors(
-                                    selectedContainerColor = SwamiNavy,
-                                    selectedLabelColor = MaterialTheme.colorScheme.onPrimary
-                                )
-                            )
-                        }
+        if (formConfig.catalogCategories.isNotEmpty()) {
+            AlertDialog(
+                onDismissRequest = { showQuickCatalogSheet = false },
+                title = {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(Icons.Default.LibraryBooks, contentDescription = null, tint = SwamiNavy)
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text("Work Library", fontWeight = FontWeight.Bold, fontSize = 17.sp)
                     }
-
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Divider(color = MaterialTheme.colorScheme.outlineVariant)
-                    Spacer(modifier = Modifier.height(8.dp))
-
-                    LazyColumn(
-                        modifier = Modifier.weight(1f, fill = false),
-                        verticalArrangement = Arrangement.spacedBy(8.dp)
-                    ) {
-                        items(filteredCatalog) { workItem ->
-                            Card(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .clickable {
-                                        // If the first row is empty, replace it, otherwise add new row
-                                        val rateFormatted = if (workItem.defaultRate % 1.0 == 0.0) workItem.defaultRate.toInt().toString() else workItem.defaultRate.toString()
-                                        if (itemsList.size == 1 && itemsList[0].description.isBlank() && itemsList[0].rateText.isBlank()) {
-                                            itemsList[0] = ConstructionItemRow(
-                                                description = workItem.description,
-                                                rateText = rateFormatted,
-                                                qtyText = "1",
-                                                unit = workItem.defaultUnit
-                                            )
-                                        } else {
-                                            itemsList.add(
-                                                ConstructionItemRow(
-                                                    description = workItem.description,
-                                                    rateText = rateFormatted,
-                                                    qtyText = "1",
-                                                    unit = workItem.defaultUnit
-                                                )
-                                            )
-                                        }
-                                        Toast.makeText(context, "Added: ${workItem.title}", Toast.LENGTH_SHORT).show()
-                                        showQuickCatalogSheet = false
-                                    },
-                                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
-                                border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
-                                shape = RoundedCornerShape(8.dp)
-                            ) {
-                                Column(modifier = Modifier.padding(10.dp)) {
-                                    Row(
-                                        modifier = Modifier.fillMaxWidth(),
-                                        horizontalArrangement = Arrangement.SpaceBetween,
-                                        verticalAlignment = Alignment.CenterVertically
-                                    ) {
-                                        Text(
-                                            text = workItem.title,
-                                            fontWeight = FontWeight.Bold,
-                                            fontSize = 13.sp,
-                                            color = SwamiNavy,
-                                            modifier = Modifier.weight(1f)
+                },
+                text = {
+                    Column(modifier = Modifier.fillMaxWidth().heightIn(max = 480.dp)) {
+                        Text(
+                            "Tap any standard specification to add it immediately:",
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        com.example.ui.components.CatalogPicker(
+                            categories = formConfig.catalogCategories,
+                            onItemAdded = { catalogItem ->
+                                val rateFormatted = if (catalogItem.defaultRate % 1.0 == 0.0) catalogItem.defaultRate.toInt().toString() else catalogItem.defaultRate.toString()
+                                if (itemsList.size == 1 && itemsList[0].description.isBlank() && itemsList[0].rateText.isBlank()) {
+                                    itemsList[0] = ConstructionItemRow(
+                                        description = catalogItem.name,
+                                        rateText = rateFormatted,
+                                        qtyText = "1",
+                                        unit = catalogItem.defaultUnit
+                                    )
+                                } else {
+                                    itemsList.add(
+                                        ConstructionItemRow(
+                                            description = catalogItem.name,
+                                            rateText = rateFormatted,
+                                            qtyText = "1",
+                                            unit = catalogItem.defaultUnit
                                         )
-                                        Surface(
-                                            color = SwamiGreen.copy(alpha = 0.12f),
-                                            shape = RoundedCornerShape(4.dp)
-                                        ) {
-                                            Text(
-                                                text = "₹${Formatters.plain(workItem.defaultRate)} / ${workItem.defaultUnit}",
-                                                fontSize = 11.5.sp,
-                                                fontWeight = FontWeight.Bold,
-                                                color = SwamiGreen,
-                                                modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
-                                            )
-                                        }
-                                    }
-                                    Spacer(modifier = Modifier.height(4.dp))
-                                    Text(
-                                        text = workItem.description,
-                                        fontSize = 11.5.sp,
-                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                        maxLines = 2
                                     )
                                 }
-                            }
-                        }
+                                Toast.makeText(context, "Added: ${catalogItem.name}", Toast.LENGTH_SHORT).show()
+                                showQuickCatalogSheet = false
+                            },
+                            modifier = Modifier.fillMaxSize()
+                        )
+                    }
+                },
+                confirmButton = {
+                    TextButton(onClick = { showQuickCatalogSheet = false }) {
+                        Text("Close")
                     }
                 }
-            },
-            confirmButton = {
-                TextButton(onClick = { showQuickCatalogSheet = false }) {
-                    Text("Close")
-                }
-            }
-        )
+            )
+        }
     }
 
     // Customer Picker Modal
