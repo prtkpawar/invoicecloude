@@ -206,6 +206,8 @@ fun EmptyStateView(
 
 @Composable
 fun SwamiSolarEmblem(modifier: Modifier = Modifier.size(38.dp)) {
+    val arcColor = MaterialTheme.colorScheme.onSurfaceVariant
+    val globeColor = MaterialTheme.colorScheme.primary
     androidx.compose.foundation.Canvas(modifier = modifier) {
         val w = size.width
         val h = size.height
@@ -263,12 +265,12 @@ fun SwamiSolarEmblem(modifier: Modifier = Modifier.size(38.dp)) {
         }
         drawPath(
             path = goldenArcPath,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+            color = arcColor
         )
 
         // 2. Base Sphere Globe
         drawCircle(
-            color = MaterialTheme.colorScheme.primary,
+            color = globeColor,
             radius = globeRadius,
             center = androidx.compose.ui.geometry.Offset(centerX, centerY)
         )

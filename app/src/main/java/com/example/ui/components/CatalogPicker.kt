@@ -61,7 +61,7 @@ fun CatalogPicker(
                     onClick = { selectedTabIndex = index },
                     text = {
                         Text(
-                            text = "${category.emoji} ${category.name}",
+                            text = if (category.iconEmoji.isNotBlank()) "${category.iconEmoji} ${category.label}" else category.label,
                             style = MaterialTheme.typography.titleSmall
                         )
                     }
@@ -92,7 +92,7 @@ fun CatalogPicker(
                             .padding(12.dp)
                     ) {
                         Text(
-                            text = item.name,
+                            text = item.label,
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -120,7 +120,7 @@ fun CatalogPicker(
                         ) {
                             Column {
                                 Text(
-                                    text = "₹${item.rate}",
+                                    text = "₹${item.defaultRate}",
                                     style = MaterialTheme.typography.bodyMedium,
                                     fontWeight = FontWeight.Bold,
                                     color = MaterialTheme.colorScheme.primary
@@ -149,7 +149,7 @@ fun CatalogPicker(
                             ) {
                                 Icon(
                                     imageVector = Icons.Default.Add,
-                                    contentDescription = "Add ${item.name}",
+                                    contentDescription = "Add ${item.label}",
                                     modifier = Modifier.size(16.dp)
                                 )
                             }
@@ -179,7 +179,7 @@ fun QuickItemChips(
         items(items) { item ->
             SuggestionChip(
                 onClick = { onItemAdded(item) },
-                label = { Text("${item.emoji} ${item.name}") }
+                label = { Text(item.label) }
             )
         }
     }
