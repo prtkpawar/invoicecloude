@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="128dp"
+    android:height="128dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- ========================================================= -->
+    <!-- BILLBOOK LOGO                                             -->
+    <!-- ========================================================= -->
+
+    <!-- Transparent background -->
+
+    <!-- ========================================================= -->
+    <!-- OUTER CIRCULAR RING - BLUE LEFT / BLACK RIGHT             -->
+    <!-- ========================================================= -->
+
+    <!-- Blue half -->
+    <path
+        android:pathData="
+            M 100,10
+            A 90,90 0 0,0 100,190
+            L 100,177
+            A 77,77 0 0,1 100,23
+            Z">
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="20"
+                android:startY="40"
+                android:endX="100"
+                android:endY="170">
+
+                <item
+                    android:color="#2196F3"
+                    android:offset="0"/>
+
+                <item
+                    android:color="#087FEA"
+                    android:offset="0.55"/>
+
+                <item
+                    android:color="#0059D6"
+                    android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Black half -->
+    <path
+        android:pathData="
+            M 100,10
+            A 90,90 0 0,1 100,190
+            L 100,177
+            A 77,77 0 0,0 100,23
+            Z">
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="100"
+                android:startY="20"
+                android:endX="175"
+                android:endY="175">
+
+                <item
+                    android:color="#101010"
+                    android:offset="0"/>
+
+                <item
+                    android:color="#202020"
+                    android:offset="0.5"/>
+
+                <item
+                    android:color="#050505"
+                    android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ========================================================= -->
+    <!-- INNER WHITE AREA                                          -->
+    <!-- ========================================================= -->
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M 100,24
+            A 76,76 0 1,1 100,176
+            A 76,76 0 1,1 100,24
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- DOCUMENT SHADOW                                            -->
+    <!-- ========================================================= -->
+
+    <path
+        android:fillColor="#30000000"
+        android:pathData="
+            M 57,37
+            L 113,37
+            L 143,67
+            L 143,130
+            L 63,130
+            L 57,124
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- DOCUMENT BLUE FRAME                                        -->
+    <!-- ========================================================= -->
+
+    <path
+        android:pathData="
+            M 55,35
+            L 112,35
+            L 143,66
+            L 143,128
+            C 143,135 138,140 131,140
+            L 63,140
+            C 56,140 51,135 51,128
+            L 51,47
+            C 51,40 56,35 63,35
+            Z">
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="50"
+                android:startY="35"
+                android:endX="140"
+                android:endY="140">
+
+                <item
+                    android:color="#1599F5"
+                    android:offset="0"/>
+
+                <item
+                    android:color="#0878EC"
+                    android:offset="0.55"/>
+
+                <item
+                    android:color="#005BD8"
+                    android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ========================================================= -->
+    <!-- WHITE DOCUMENT                                            -->
+    <!-- ========================================================= -->
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M 64,42
+            L 111,42
+            L 135,66
+            L 135,128
+            C 135,132 132,135 128,135
+            L 66,135
+            C 62,135 59,132 59,128
+            L 59,49
+            C 59,45 62,42 64,42
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- FOLDED BLUE CORNER                                        -->
+    <!-- ========================================================= -->
+
+    <path
+        android:pathData="
+            M 111,42
+            L 111,65
+            C 111,68 114,70 117,70
+            L 135,70
+            L 135,66
+            Z">
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="110"
+                android:startY="42"
+                android:endX="135"
+                android:endY="70">
+
+                <item
+                    android:color="#1CA1F7"
+                    android:offset="0"/>
+
+                <item
+                    android:color="#087CEC"
+                    android:offset="0.65"/>
+
+                <item
+                    android:color="#005DD8"
+                    android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Fold shadow -->
+    <path
+        android:fillColor="#151515"
+        android:pathData="
+            M 111,65
+            L 135,65
+            L 135,70
+            L 117,70
+            C 113,70 111,68 111,65
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- LARGE BLACK B                                             -->
+    <!-- ========================================================= -->
+
+    <path
+        android:fillColor="#050505"
+        android:pathData="
+            M 68,48
+            L 82,48
+            C 91,48 97,52 97,59
+            C 97,63 95,66 91,68
+            C 96,70 99,73 99,78
+            C 99,85 93,90 83,90
+            L 68,90
+            Z
+
+            M 77,55
+            L 82,55
+            C 86,55 88,57 88,60
+            C 88,63 86,64 82,64
+            L 77,64
+            Z
+
+            M 77,71
+            L 83,71
+            C 87,71 89,73 89,76
+            C 89,79 87,82 83,82
+            L 77,82
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- DOCUMENT HEADER LINES                                     -->
+    <!-- ========================================================= -->
+
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 102,51
+            L 124,51
+            C 126,51 127,52 127,54
+            C 127,56 126,57 124,57
+            L 102,57
+            C 100,57 99,56 99,54
+            C 99,52 100,51 102,51
+            Z" />
+
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 102,61
+            L 120,61
+            C 122,61 123,62 123,64
+            C 123,66 122,67 120,67
+            L 102,67
+            C 100,67 99,66 99,64
+            C 99,62 100,61 102,61
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- TABLE                                                      -->
+    <!-- ========================================================= -->
+
+    <!-- Table outer box -->
+    <path
+        android:fillColor="#D5DCE5"
+        android:pathData="
+            M 68,94
+            L 128,94
+            L 128,124
+            L 68,124
+            Z" />
+
+    <!-- Table white interior -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M 70,96
+            L 126,96
+            L 126,122
+            L 70,122
+            Z" />
+
+    <!-- Vertical divider -->
+    <path
+        android:fillColor="#D5DCE5"
+        android:pathData="
+            M 101,94
+            L 103,94
+            L 103,124
+            L 101,124
+            Z" />
+
+    <!-- Row 1 left -->
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 73,99
+            L 94,99
+            C 95.5,99 96,100 96,101
+            C 96,102.5 95.5,103 94,103
+            L 73,103
+            C 71.5,103 71,102.5 71,101
+            C 71,100 71.5,99 73,99
+            Z" />
+
+    <!-- Row 1 right -->
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 108,99
+            L 120,99
+            C 121.5,99 122,100 122,101
+            C 122,102.5 121.5,103 120,103
+            L 108,103
+            C 106.5,103 106,102.5 106,101
+            C 106,100 106.5,99 108,99
+            Z" />
+
+    <!-- Row 2 left -->
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 73,108
+            L 91,108
+            C 92.5,108 93,109 93,110
+            C 93,111.5 92.5,112 91,112
+            L 73,112
+            C 71.5,112 71,111.5 71,110
+            C 71,109 71.5,108 73,108
+            Z" />
+
+    <!-- Row 2 right -->
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 108,108
+            L 120,108
+            C 121.5,108 122,109 122,110
+            C 122,111.5 121.5,112 120,112
+            L 108,112
+            C 106.5,112 106,111.5 106,110
+            C 106,109 106.5,108 108,108
+            Z" />
+
+    <!-- Row 3 left -->
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 73,117
+            L 91,117
+            C 92.5,117 93,118 93,119
+            C 93,120.5 92.5,121 91,121
+            L 73,121
+            C 71.5,121 71,120.5 71,119
+            C 71,118 71.5,117 73,117
+            Z" />
+
+    <!-- Row 3 right -->
+    <path
+        android:fillColor="#68717D"
+        android:pathData="
+            M 108,117
+            L 120,117
+            C 121.5,117 122,118 122,119
+            C 122,120.5 121.5,121 120,121
+            L 108,121
+            C 106.5,121 106,120.5 106,119
+            C 106,118 106.5,117 108,117
+            Z" />
+
+    <!-- ========================================================= -->
+    <!-- BLUE VERIFIED BADGE                                      -->
+    <!-- ========================================================= -->
+
+    <!-- Badge shadow -->
+    <path
+        android:fillColor="#40000000"
+        android:pathData="
+            M 137,104
+            A 23,23 0 1,1 137,150
+            A 23,23 0 1,1 137,104
+            Z" />
+
+    <!-- Black outer border -->
+    <path
+        android:fillColor="#171717"
+        android:pathData="
+            M 137,101
+            A 22,22 0 1,1 137,145
+            A 22,22 0 1,1 137,101
+            Z" />
+
+    <!-- Blue badge -->
+    <path
+        android:pathData="
+            M 137,105
+            A 18,18 0 1,1 137,141
+            A 18,18 0 1,1 137,105
+            Z">
+
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="125"
+                android:startY="105"
+                android:endX="149"
+                android:endY="141">
+
+                <item
+                    android:color="#179CF5"
+                    android:offset="0"/>
+
+                <item
+                    android:color="#087BEA"
+                    android:offset="0.6"/>
+
+                <item
+                    android:color="#005BD5"
+                    android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- White checkmark -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="@android:color/transparent"
+        android:pathData="
+            M 128,122
+            L 134,128
+            L 147,114" />
+
+    <!-- ========================================================= -->
+    <!-- BILLBOOK WORDMARK                                         -->
+    <!-- ========================================================= -->
+
+    <!-- B -->
+    <path
+        android:fillColor="#050505"
+        android:pathData="
+            M 39,153
+            L 47,153
+            C 52,153 55,155 55,159
+            C 55,161 54,163 52,164
+            C 55,165 57,168 57,171
+            C 57,176 53,179 47,179
+            L 39,179
+            Z
+
+            M 44,157
+            L 47,157
+            C 49,157 50,158 50,160
+            C 50,161.5 49,162 47,162
+            L 44,162
+            Z
+
+            M 44,166
+            L 47,166
+            C 50,166 51,167 51,169
+            C 51,171 50,172 47,172
+            L 44,172
+            Z" />
+
+    <!-- i -->
+    <path
+        android:fillColor="#050505"
+        android:pathData="
+            M 59,158
+            L 64,158
+            L 64,179
+            L 59,179
+            Z
+            M 59,153
+            L 64,153
+            L 64,157
+            L 59,157
+            Z" />
+
+    <!-- l -->
+    <path
+        android:fillColor="#050505"
+        android:pathData="
+            M 68,153
+            L 73,153
+            L 73,179
+            L 68,179
+            Z" />
+
+    <!-- l -->
+    <path
+        android:fillColor="#050505"
+        android:pathData="
+            M 77,153
+            L 82,153
+            L 82,179
+            L 77,179
+            Z" />
+
+    <!-- B in blue -->
+    <path
+        android:fillColor="#0788F0"
+        android:pathData="
+            M 86,153
+            L 94,153
+            C 99,153 102,155 102,159
+            C 102,161 101,163 99,164
+            C 102,165 104,168 104,171
+            C 104,176 100,179 94,179
+            L 86,179
+            Z
+
+            M 91,157
+            L 94,157
+            C 96,157 97,158 97,160
+            C 97,161.5 96,162 94,162
+            L 91,162
+            Z
+
+            M 91,166
+            L 94,166
+            C 97,166 98,167 98,169
+            C 98,171 97,172 94,172
+            L 91,172
+            Z" />
+
+    <!-- o -->
+    <path
+        android:fillColor="#0788F0"
+        android:pathData="
+            M 113,160
+            C 106,160 103,164 103,170
+            C 103,176 106,180 113,180
+            C 120,180 123,176 123,170
+            C 123,164 120,160 113,160
+            Z
+
+            M 113,165
+            C 116,165 117,167 117,170
+            C 117,173 116,175 113,175
+            C 110,175 109,173 109,170
+            C 109,167 110,165 113,165
+            Z" />
+
+    <!-- o -->
+    <path
+        android:fillColor="#0788F0"
+        android:pathData="
+            M 133,160
+            C 126,160 123,164 123,170
+            C 123,176 126,180 133,180
+            C 140,180 143,176 143,170
+            C 143,164 140,160 133,160
+            Z
+
+            M 133,165
+            C 136,165 137,167 137,170
+            C 137,173 136,175 133,175
+            C 130,175 129,173 129,170
+            C 129,167 130,165 133,165
+            Z" />
+
+    <!-- k -->
+    <path
+        android:fillColor="#0788F0"
+        android:pathData="
+            M 146,153
+            L 152,153
+            L 152,166
+            L 158,160
+            L 165,160
+            L 157,169
+            L 165,179
+            L 158,179
+            L 152,172
+            L 152,179
+            L 146,179
+            Z" />
+
+</vector>

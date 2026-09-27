@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="200dp"
+    android:viewportWidth="320"
+    android:viewportHeight="200">
+
+    <!-- Soft Ambient Halo Background -->
+    <path
+        android:fillColor="#EFF6FF"
+        android:pathData="M 160,10 C 235,10 295,45 295,95 C 295,145 235,185 160,185 C 85,185 25,145 25,95 C 25,45 85,10 160,10 Z" />
+
+    <!-- Subtle Floating Decorative Particles -->
+    <path
+        android:fillColor="#DBEAFE"
+        android:pathData="M 45,45 A 6,6 0 1 0 45,33 A 6,6 0 1 0 45,45 Z M 275,60 A 8,8 0 1 0 275,44 A 8,8 0 1 0 275,60 Z M 285,140 A 5,5 0 1 0 285,130 A 5,5 0 1 0 285,140 Z M 35,140 A 7,7 0 1 0 35,126 A 7,7 0 1 0 35,140 Z" />
+
+    <!-- 4-Point Sparkles -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M 70,35 Q 70,45 60,45 Q 70,45 70,55 Q 70,45 80,45 Q 70,45 70,35 Z" />
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M 255,25 Q 255,33 247,33 Q 255,33 255,41 Q 255,33 263,33 Q 255,33 255,25 Z" />
+
+    <!-- Isometric / Floating Central Invoice Sheet (Drop Shadow) -->
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M 88,32 L 236,32 C 242.6,32 248,37.4 248,44 L 248,172 C 248,178.6 242.6,184 236,184 L 88,184 C 81.4,184 76,178.6 76,172 L 76,44 C 76,37.4 81.4,32 88,32 Z" />
+
+    <!-- Invoice Sheet Body (White crisp card) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 84,28 L 232,28 C 238.6,28 244,33.4 244,40 L 244,168 C 244,174.6 238.6,180 232,180 L 84,180 C 77.4,180 72,174.6 72,168 L 72,40 C 72,33.4 77.4,28 84,28 Z" />
+
+    <!-- Top Navy Header Banner on Sheet -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M 72,40 C 72,33.4 77.4,28 84,28 L 232,28 C 238.6,28 244,33.4 244,40 L 244,56 L 72,56 Z" />
+
+    <!-- Header Logo Pill on Invoice -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M 86,36 C 86,34.5 87.5,33 89,33 L 125,33 C 126.5,33 128,34.5 128,36 L 128,48 C 128,49.5 126.5,51 125,51 L 89,51 C 87.5,51 86,49.5 86,48 Z" />
+
+    <!-- "TAX INVOICE" Badge in Header -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M 188,38 L 230,38 L 230,46 L 188,46 Z" />
+
+    <!-- Invoice Meta Lines -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 86,66 L 140,66 L 140,70 L 86,70 Z M 86,74 L 120,74 L 120,77 L 86,77 Z" />
+    <path
+        android:fillColor="#93C5FD"
+        android:pathData="M 180,66 L 230,66 L 230,70 L 180,70 Z M 195,74 L 230,74 L 230,77 L 195,77 Z" />
+
+    <!-- Table Header Row -->
+    <path
+        android:fillColor="#F1F5F9"
+        android:pathData="M 84,85 L 232,85 L 232,95 L 84,95 Z" />
+
+    <!-- Table Item Row 1 -->
+    <path
+        android:fillColor="#334155"
+        android:pathData="M 88,103 L 138,103 L 138,107 L 88,107 Z" />
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M 155,103 L 175,103 L 175,107 L 155,107 Z M 205,103 L 228,103 L 228,107 L 205,107 Z" />
+    <!-- Row Divider -->
+    <path
+        android:fillColor="#F1F5F9"
+        android:pathData="M 86,113 L 230,113 L 230,114 L 86,114 Z" />
+
+    <!-- Table Item Row 2 -->
+    <path
+        android:fillColor="#334155"
+        android:pathData="M 88,121 L 145,121 L 145,125 L 88,125 Z" />
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M 155,121 L 175,121 L 175,125 L 155,125 Z M 202,121 L 228,121 L 228,125 L 202,125 Z" />
+    <!-- Row Divider -->
+    <path
+        android:fillColor="#F1F5F9"
+        android:pathData="M 86,131 L 230,131 L 230,132 L 86,132 Z" />
+
+    <!-- Table Item Row 3 -->
+    <path
+        android:fillColor="#334155"
+        android:pathData="M 88,139 L 132,139 L 132,143 L 88,143 Z" />
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M 155,139 L 175,139 L 175,143 L 155,143 Z M 207,139 L 228,139 L 228,143 L 207,143 Z" />
+
+    <!-- Total Highlight Bar (Emerald Gradient Accent) -->
+    <path
+        android:fillColor="#DCFCE7"
+        android:pathData="M 84,152 L 232,152 C 235,152 237,154 237,157 L 237,171 C 237,174 235,176 232,176 L 84,176 C 81,176 79,174 79,171 L 79,157 C 79,154 81,152 84,152 Z" />
+    <path
+        android:fillColor="#15803D"
+        android:pathData="M 90,161 L 125,161 L 125,167 L 90,167 Z" />
+    <!-- ₹ Total Badge Value -->
+    <path
+        android:fillColor="#16A34A"
+        android:pathData="M 185,160 L 228,160 L 228,168 L 185,168 Z" />
+
+    <!-- Left Floating Badge: Rupee / Fast Cash Flow -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M 52,112 A 22,22 0 1 0 52,68 A 22,22 0 1 0 52,112 Z" />
+    <path
+        android:fillColor="#059669"
+        android:pathData="M 52,108 A 18,18 0 1 0 52,72 A 18,18 0 1 0 52,108 Z" />
+    <!-- Rupee symbol on badge -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 44,79 L 58,79 L 58,82 L 44,82 Z M 44,84 L 56,84 L 56,87 L 44,87 Z M 49,87 C 53,87 55,89 55,92 C 55,95 53,97 49,97 L 47,97 L 57,105 L 53,105 L 44,97 L 44,87 Z" />
+
+    <!-- Right Floating Badge: GST Shield / Verified -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M 268,68 L 288,74 L 288,96 C 288,108 268,118 268,118 C 268,118 248,108 248,96 L 248,74 Z" />
+    <path
+        android:fillColor="#1D4ED8"
+        android:pathData="M 268,72 L 284,77 L 284,95 C 284,105 268,114 268,114 C 268,114 252,105 252,95 L 252,77 Z" />
+    <!-- White Checkmark on Shield -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 264,98 L 258,92 L 261,89 L 264,92 L 275,81 L 278,84 Z" />
+
+    <!-- Bottom Left Mini Bar Chart (Financial Analytics) -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M 28,165 L 34,165 L 34,175 L 28,175 Z M 37,157 L 43,157 L 43,175 L 37,175 Z M 46,148 L 52,148 L 52,175 L 46,175 Z M 55,140 L 61,140 L 61,175 L 55,175 Z" />
+
+</vector>

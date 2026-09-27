@@ -1,0 +1,8 @@
+{
+  "name": "BillBook",
+  "description": "Universal Business Billing & Invoicing OS for Retail, Kirana, Solar, Pharmacy, Construction, Hardware, and Services with dynamic GST, WhatsApp, UPI QR, and CA-compliant PDF generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

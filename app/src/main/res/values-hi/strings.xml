@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">BillBook</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_docs">दस्तावेज़</string>
+    <string name="nav_parties">पार्टी</string>
+    <string name="nav_more">और</string>
+    
+    <!-- Home Screen -->
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="todays_revenue">आज की आय</string>
+    <string name="total_outstanding">कुल बकाया</string>
+    <string name="recent_documents">हालिया दस्तावेज़</string>
+    <string name="quick_actions">त्वरित कार्य</string>
+    <string name="new_invoice">नया बिल</string>
+    <string name="new_estimate">नया अनुमान</string>
+    <string name="record_payment">भुगतान दर्ज करें</string>
+    
+    <!-- Document Form Wizard -->
+    <string name="step_customer">ग्राहक</string>
+    <string name="step_items">सामान</string>
+    <string name="step_review">समीक्षा</string>
+    <string name="select_customer">ग्राहक चुनें</string>
+    <string name="search_customer">ग्राहक खोजें…</string>
+    <string name="new_customer">नया ग्राहक</string>
+    <string name="add_item">सामान जोड़ें</string>
+    <string name="item_name">सामान का नाम</string>
+    <string name="quantity">मात्रा</string>
+    <string name="rate">दर</string>
+    <string name="amount">राशि</string>
+    <string name="subtotal">उप-योग</string>
+    <string name="discount">छूट</string>
+    <string name="gst">जीएसटी</string>
+    <string name="total">कुल</string>
+    <string name="save_invoice">बिल सहेजें</string>
+    <string name="save_estimate">अनुमान सहेजें</string>
+    <string name="generate_pdf">PDF बनाएं</string>
+    
+    <!-- Optional Fields (Expandable Sections) -->
+    <string name="transport_details">परिवहन विवरण</string>
+    <string name="bank_details">बैंक विवरण</string>
+    <string name="terms_conditions">नियम व शर्तें</string>
+    <string name="notes">टिप्पणियाँ</string>
+    
+    <!-- Party / Customer -->
+    <string name="customer_name">ग्राहक का नाम</string>
+    <string name="phone">फ़ोन</string>
+    <string name="email">ईमेल</string>
+    <string name="address">पता</string>
+    <string name="gstin">जीएसटीआईएन</string>
+    <string name="balance">बैलेंस</string>
+    <string name="view_statement">स्टेटमेंट देखें</string>
+    
+    <!-- Settings -->
+    <string name="settings">सेटिंग्स</string>
+    <string name="business_profile">व्यापार प्रोफ़ाइल</string>
+    <string name="language">भाषा</string>
+    <string name="backup_restore">बैकअप और रीस्टोर</string>
+    <string name="subscription">सदस्यता</string>
+    <string name="analytics">विश्लेषण</string>
+    <string name="about">ऐप के बारे में</string>
+    <string name="sharing_settings">शेयरिंग सेटिंग्स</string>
+    
+    <!-- Onboarding -->
+    <string name="welcome">स्वागत है!</string>
+    <string name="setup_business">अपना व्यापार सेटअप करें</string>
+    <string name="business_name">व्यापार का नाम</string>
+    <string name="business_phone">फ़ोन नंबर</string>
+    <string name="select_industry">अपना उद्योग चुनें</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="skip_for_now">बाद में सेटअप करें</string>
+    
+    <!-- Feedback -->
+    <string name="saved_successfully">सफलतापूर्वक सहेजा गया!</string>
+    <string name="deleted_successfully">सफलतापूर्वक हटाया गया</string>
+    <string name="error_occurred">कुछ गलत हो गया। कृपया फिर प्रयास करें।</string>
+    <string name="confirm_delete">क्या आप इसे हटाना चाहते हैं?</string>
+    <string name="no_data">अभी कोई डेटा नहीं</string>
+    <string name="create_first_invoice">अपना पहला बिल बनाएं</string>
+    <string name="create_first_customer">अपना पहला ग्राहक जोड़ें</string>
+    
+    <!-- Language Names -->
+    <string name="lang_en">English</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="lang_mr">मराठी</string>
+    <string name="lang_gu">ગુજરાતી</string>
+    <string name="lang_ta">தமிழ்</string>
+    <string name="lang_te">తెలుగు</string>
+    <string name="lang_kn">ಕನ್ನಡ</string>
+    <string name="lang_ml">മലയാളം</string>
+    <string name="lang_bn">বাংলা</string>
+    <string name="lang_pa">ਪੰਜਾਬੀ</string>
+    <string name="lang_or">ଓଡ଼ିଆ</string>
+    <string name="lang_as">অসমীয়া</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="80dp"
+    android:viewportWidth="200"
+    android:viewportHeight="80">
+
+    <!-- "Rohit" continuous cursive -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M 20,55 C 20,40 30,20 50,15 C 65,10 75,20 65,35 C 55,50 35,55 35,65 C 35,70 45,75 55,65 C 65,55 75,40 85,55 C 90,65 80,75 90,75 C 100,75 105,65 110,65 C 115,65 110,75 120,75 C 130,75 135,45 135,40 C 135,35 130,65 135,70 C 140,75 145,75 150,65 C 155,55 160,50 160,50 C 160,50 155,75 165,75 C 175,75 180,65 180,55" />
+
+    <!-- "t" crossbar -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M 125,50 L 145,45" />
+
+    <!-- "i" dot -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M 153,35 A 3 3 0 1 1 159 35 A 3 3 0 1 1 153 35" />
+
+    <!-- Swish underline -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M 10,75 C 50,65 130,55 190,45" />
+</vector>
